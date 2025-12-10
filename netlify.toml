@@ -1,10 +1,11 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  # publish directory is auto-detected by Netlify's OpenNext adapter for Next.js 13.5+
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [dev]
-  # Command Netlify Dev will run locally
   command = "npm run dev"
-  # Port your Next.js dev server listens on (set in package.json: next dev -p 302)
   targetPort = 302
   framework = "next"
