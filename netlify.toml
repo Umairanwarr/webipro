@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[dev]
+  # Command Netlify Dev will run locally
+  command = "npm run dev"
+  # Port your Next.js dev server listens on (set in package.json: next dev -p 302)
+  targetPort = 302
+  framework = "next"
